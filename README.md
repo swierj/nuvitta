@@ -8,4 +8,4 @@ You can view it here: https://swierj.github.io/nuvitta/
 
 -> The fully working site with customer payment processing capabilities will be hosted separetely here:
   
-|  -> You can find all of my code for the fully working site (with payment processing) in this repo:
+    -> You can find all of my code for the fully working site (with payment processing) in this repo:
