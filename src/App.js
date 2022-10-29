@@ -16,6 +16,7 @@ import {
   Checkout,
 } from './pages'
 
+/* once i actually deploy the full site remember to change the homepage thing to actual domain */
 export default function App() {
   return (
     <Router>
