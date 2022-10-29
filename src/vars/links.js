@@ -1,21 +1,21 @@
 import React from 'react'
 
-/* navbar/sidebar links to pages */
+/* navbar/sidebar links to pages. change these back once i finish github deployment */
 export const links = [
   {
     id: 1,
     text: 'home',
-    url: '/',
+    url: '/nuvitta/',
   },
   {
     id: 2,
     text: 'about',
-    url: '/about',
+    url: '/nuvitta/about',
   },
   {
     id: 3,
     text: 'products',
-    url: '/products',
+    url: '/nuvitta/products',
   },
 ]
 

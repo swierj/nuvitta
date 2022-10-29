@@ -24,13 +24,13 @@ export default function App() {
       <Sidebar />
       <div className='page-content'>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='about' element={<About />} />
-          <Route path='cart' element={<Cart />} />
-          <Route path='products' element={<Products />} />
-          <Route path='products/:id' element={<SingleProduct />} />
+          <Route path='/nuvitta/' element={<Home />} />
+          <Route path='/nuvitta/about' element={<About />} />
+          <Route path='/nuvitta/cart' element={<Cart />} />
+          <Route path='/nuvitta/products' element={<Products />} />
+          <Route path='/nuvitta/products/:id' element={<SingleProduct />} />
           <Route
-            path='checkout'
+            path='/nuvitta/checkout'
             element={
               <PrivateRoute>
                 <Checkout />
