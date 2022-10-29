@@ -4,7 +4,7 @@
 
 *Note: this is mainly the front end portion without payment processing that I am allowed to host on github pages*
 
-You can view it here (may be outdated deployment): https://swierj.github.io/nuvitta/
+You can view it here (*note: deployment might be outdated*): https://swierj.github.io/nuvitta/
 
 -> The fully working site with customer payment processing capabilities will be hosted separetely here:
   
