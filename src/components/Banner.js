@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import bannerImg from '../assets/skincare_products_pl.png'
+import { links } from '../vars/links'
 import test from '../assets/skincare-background.png'
 
 export default function Banner() {
@@ -18,7 +19,7 @@ export default function Banner() {
           since the 1500s.
         </p>
         <div className='btn-container'>
-          <Link to='/products' className='btn'>
+          <Link to={links[2].url} className='btn'>
             shop products
           </Link>
         </div>
