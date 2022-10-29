@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/nuvitta/static/css/main.82dc95ba.css",
-    "main.js": "/nuvitta/static/js/main.d47dc660.js",
+    "main.js": "/nuvitta/static/js/main.5b331370.js",
     "static/media/Woman-with-Leaf.png": "/nuvitta/static/media/Woman-with-Leaf.80e012be50c106cf4b6c.png",
     "static/media/grass-background.jpg": "/nuvitta/static/media/grass-background.22a63ed940229c162695.jpg",
     "static/media/skincare_products_pl.png": "/nuvitta/static/media/skincare_products_pl.45b93a751b3045463105.png",
@@ -10,10 +10,10 @@
     "static/media/nuvitta-logo.png": "/nuvitta/static/media/nuvitta-logo.882795d9217b3bc5ce2f.png",
     "index.html": "/nuvitta/index.html",
     "main.82dc95ba.css.map": "/nuvitta/static/css/main.82dc95ba.css.map",
-    "main.d47dc660.js.map": "/nuvitta/static/js/main.d47dc660.js.map"
+    "main.5b331370.js.map": "/nuvitta/static/js/main.5b331370.js.map"
   },
   "entrypoints": [
     "static/css/main.82dc95ba.css",
-    "static/js/main.d47dc660.js"
+    "static/js/main.5b331370.js"
   ]
 }
