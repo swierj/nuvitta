@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/swierj/nuvitta/static/css/main.82dc95ba.css",
+    "main.js": "/swierj/nuvitta/static/js/main.2fe8896f.js",
+    "static/media/Woman-with-Leaf.png": "/swierj/nuvitta/static/media/Woman-with-Leaf.80e012be50c106cf4b6c.png",
+    "static/media/grass-background.jpg": "/swierj/nuvitta/static/media/grass-background.22a63ed940229c162695.jpg",
+    "static/media/skincare_products_pl.png": "/swierj/nuvitta/static/media/skincare_products_pl.45b93a751b3045463105.png",
+    "static/media/skincare-background.png": "/swierj/nuvitta/static/media/skincare-background.48a68054e48858cd2ff6.png",
+    "static/media/water-lily.jpg": "/swierj/nuvitta/static/media/water-lily.1e38e36ded2158eb57d4.jpg",
+    "static/media/nuvitta-logo.png": "/swierj/nuvitta/static/media/nuvitta-logo.882795d9217b3bc5ce2f.png",
+    "index.html": "/swierj/nuvitta/index.html",
+    "main.82dc95ba.css.map": "/swierj/nuvitta/static/css/main.82dc95ba.css.map",
+    "main.2fe8896f.js.map": "/swierj/nuvitta/static/js/main.2fe8896f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82dc95ba.css",
+    "static/js/main.2fe8896f.js"
+  ]
+}
