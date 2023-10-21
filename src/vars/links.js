@@ -20,4 +20,4 @@ export const links = [
 ]
 
 export const product_data =
-  'https://swierj.github.io/nuvitta_api/product-data.json'
+  'https://swierj.github.io/nuvitta_api_test/product-data.json'

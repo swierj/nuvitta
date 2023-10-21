@@ -13,7 +13,7 @@ export default function Nav() {
     <NavbarContainer>
       <div className='nav-bar'>
         <div className='nav-bar-main'>
-          <Link to='/'>
+          <Link to='../nuvitta/'>
             <img src={logo} alt='nuvitta logo' />
           </Link>
           <button type='button' className='hamburger-btn' onClick={openSidebar}>

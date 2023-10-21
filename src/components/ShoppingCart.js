@@ -8,7 +8,7 @@ export default function ShoppingCart() {
   const { closeSidebar } = useSidebarContext()
   return (
     <CartContainer className='shopping-cart'>
-      <Link to='/cart' onClick={closeSidebar}>
+      <Link to='../nuvitta/cart' onClick={closeSidebar}>
         <div className='cart-icon'>
           <FaShoppingCart />
         </div>

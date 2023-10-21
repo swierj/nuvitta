@@ -12,11 +12,6 @@ export default function Services() {
           <h2>
             organic and natural products <br /> made for your skin
           </h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s.
-          </p>
         </article>
         <div className='services'>
           {servicesData.map((data) => {
@@ -60,10 +55,8 @@ const ServiceContainer = styled.section`
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 5rem 0;
   h2 {
     color: white;
-    font-size: 2rem;
     margin-bottom: 1rem;
     letter-spacing: 0.2rem;
     word-spacing: 0.5rem;
@@ -76,7 +69,8 @@ const ServiceContainer = styled.section`
   }
   .head {
     place-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 10rem;
   }
   .head p {
     color: white;
@@ -116,7 +110,6 @@ const ServiceContainer = styled.section`
     margin-bottom: 10rem;
     .head {
       display: grid;
-      grid-template-columns: 1fr 1fr;
     }
     .services {
       transform: translateY(5rem);

@@ -7,6 +7,9 @@ const initialState = {
   products_error: false,
   products: [],
   bestsell_products: [],
+  s_product_load: false,
+  s_product_error: false,
+  s_product: {},
 }
 
 const ProductsContext = React.createContext()
@@ -38,6 +41,12 @@ const reducer = (state, action) => {
       }
     case ACTIONS.PRODUCTS_ERROR:
       return { ...state, products_load: false, products_error: true }
+    case ACTIONS.S_PRODUCT_BEGIN:
+      return { ...state, s_product_load: true, s_product_error: false }
+    case ACTIONS.S_PRODUCT_SUCCESS:
+      return { ...state, s_product_load: false, s_product: action.payload }
+    case ACTIONS.S_PRODUCT_ERROR:
+      return { ...state, s_product_load: false, s_product_error: true }
   }
 }
 
@@ -57,12 +66,25 @@ export const ProductsProvider = ({ children }) => {
     console.log(response)
   }
 
+  const fetchSingleProduct = async (data) => {
+    dispatch({ type: ACTIONS.S_PRODUCT_BEGIN })
+    try {
+      const response = await axios.get(data)
+      const s_product = response.data
+      dispatch({ type: ACTIONS.S_PRODUCT_SUCCESS, payload: s_product })
+    } catch (error) {
+      dispatch({ type: ACTIONS.S_PRODUCT_ERROR })
+    }
+    const response = await axios.get(data)
+    console.log(response)
+  }
+
   useEffect(() => {
     fetchProducts(data)
   }, [])
 
   return (
-    <ProductsContext.Provider value={{ ...state }}>
+    <ProductsContext.Provider value={{ ...state, fetchSingleProduct }}>
       {children}
     </ProductsContext.Provider>
   )

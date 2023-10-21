@@ -7,7 +7,7 @@ import Loading from './Loading'
 import styled from 'styled-components'
 import ProductCard from './ProductCard'
 
-export default function BestsellerProducts() {
+export default function BundleProducts() {
   const {
     bestsell_products: bestsell,
     products_error: error,
@@ -20,27 +20,21 @@ export default function BestsellerProducts() {
     return <Error />
   }
   return (
-    <BestSellerContainer className='page'>
-      <div className='background-img page-center'></div>
+    <BundleContainer className='page'>
       <div className='page-center title'>
-        <h1>Our Best Sellers</h1>
+        <h1>save on bundles</h1>
       </div>
       <div className='page-center bestsell'>
         {bestsell.map((product) => {
           return <ProductCard key={product.id} {...product} />
         })}
       </div>
-      <div className='btn-container'>
-        <Link to={links[2].url} className='btn'>
-          all products
-        </Link>
-      </div>
-    </BestSellerContainer>
+    </BundleContainer>
   )
 }
 
-const BestSellerContainer = styled.section`
-  background-color: var(--bundle-color);
+const BundleContainer = styled.section`
+  background: var(--bundle-color);
   .bestsell {
     justify-content: center;
     align-items: center;
