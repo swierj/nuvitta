@@ -15,6 +15,11 @@ import ProductImages from './ProductImages'
 import ProductList from './ProductList'
 import AddToCart from './AddToCart'
 import BackgroundImg from './BackgroundImg'
+import Filters from './Filters'
+import ViewFilter from './ViewFilter'
+import CartCheckout from './CartCheckout'
+import CartContent from './CartContent'
+import { StripeCheckout } from './StripeCheckout'
 export {
   Navbar,
   Footer,
@@ -33,4 +38,9 @@ export {
   AddToCart,
   BackgroundImg,
   ProductList,
+  Filters,
+  ViewFilter,
+  CartCheckout,
+  CartContent,
+  StripeCheckout,
 }

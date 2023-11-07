@@ -65,17 +65,24 @@ p {
   font-weight: 300;
 }
 
+.product-title {
+  color: var(--product-info-color);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
 .btn {
   display: inline-block;
   color: white;
   background-color: var(--brand-color);
-  padding: 1rem;
-  border-radius: 1rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
   border: 0;
   cursor: pointer;
   text-transform: capitalize;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.15rem;
   transition: 1s;
+  font-weight: 600;
 }
 
 .btn:hover {

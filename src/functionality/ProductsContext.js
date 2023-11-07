@@ -2,6 +2,16 @@ import axios from 'axios'
 import React, { useContext, useEffect, useReducer } from 'react'
 import { product_data as data } from '../vars/links'
 
+const ACTIONS = {
+  PRODUCTS_BEGIN: 'PRODUCTS_BEGIN',
+  PRODUCTS_SUCCESS: 'PRODUCTS_SUCCESS',
+  PRODUCTS_ERROR: 'PRODUCTS_ERROR',
+  /* single product page actions */
+  S_PRODUCT_BEGIN: 'S_PRODUCT_BEGIN',
+  S_PRODUCT_SUCCESS: 'S_PRODUCT_SUCCESS',
+  S_PRODUCT_ERROR: 'S_PRODUCT_ERROR',
+}
+
 const initialState = {
   products_load: false,
   products_error: false,
@@ -13,16 +23,6 @@ const initialState = {
 }
 
 const ProductsContext = React.createContext()
-
-const ACTIONS = {
-  PRODUCTS_BEGIN: 'PRODUCTS_BEGIN',
-  PRODUCTS_SUCCESS: 'PRODUCTS_SUCCESS',
-  PRODUCTS_ERROR: 'PRODUCTS_ERROR',
-  /* single product page actions */
-  S_PRODUCT_BEGIN: 'S_PRODUCT_BEGIN',
-  S_PRODUCT_SUCCESS: 'S_PRODUCT_SUCCESS',
-  S_PRODUCT_ERROR: 'S_PRODUCT_ERROR',
-}
 
 /* try with switch otherwise switch to the if/else statements */
 const reducer = (state, action) => {
@@ -47,6 +47,8 @@ const reducer = (state, action) => {
       return { ...state, s_product_load: false, s_product: action.payload }
     case ACTIONS.S_PRODUCT_ERROR:
       return { ...state, s_product_load: false, s_product_error: true }
+    default:
+      return { ...state }
   }
 }
 

@@ -4,8 +4,8 @@ import logo from '../assets/nuvitta-logo.png'
 import styled from 'styled-components'
 import { FaBars } from 'react-icons/fa'
 import { links } from '../vars/links'
-import ShoppingCart from './ShoppingCart'
-import { useSidebarContext } from '../functionality/sidebar-context'
+import CartIcon from './CartIcon'
+import { useSidebarContext } from '../functionality/SidebarContext'
 
 export default function Nav() {
   const { openSidebar } = useSidebarContext()
@@ -32,7 +32,7 @@ export default function Nav() {
             )
           })}
         </ul>
-        <ShoppingCart />
+        <CartIcon />
       </div>
     </NavbarContainer>
   )

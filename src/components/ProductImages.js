@@ -1,14 +1,8 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
-export default function ProductImages({
-  imgMain,
-  name,
-  imgAlt1,
-  imgAlt2,
-  imgAlt3,
-}) {
-  const images = [imgMain, imgAlt1, imgAlt2, imgAlt3]
+export default function ProductImages({ imgMain, name, imgAlt1, imgAlt2 }) {
+  const images = [imgMain, imgAlt1, imgAlt2]
   const [main, setMain] = useState(images[0])
   return (
     <ImagesContainer>
@@ -32,16 +26,17 @@ export default function ProductImages({
 
 const ImagesContainer = styled.section`
   img {
-    max-width: 22rem;
+    max-width: 26rem;
     display: block;
     border-radius: 0.75rem;
     object-fit: cover;
     align-items: center;
   }
   .img-gallery {
+    width: 26rem;
     margin-top: 1rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     img {
       height: 100px;
       cursor: pointer;

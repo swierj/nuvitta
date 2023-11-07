@@ -9,13 +9,13 @@ export const links = [
   },
   {
     id: 2,
-    text: 'about',
-    url: '/nuvitta/about',
+    text: 'products',
+    url: '/nuvitta/products',
   },
   {
     id: 3,
-    text: 'products',
-    url: '/nuvitta/products',
+    text: 'about us',
+    url: '/nuvitta/about',
   },
 ]
 

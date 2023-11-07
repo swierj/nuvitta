@@ -2,13 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import { FaPlus, FaMinus } from 'react-icons/fa'
 
+/* add popup that asks user if they want to delete item when amount == 0 */
 export default function ProductAmount({ increase, decrease, amount }) {
   return (
     <AmountContainer>
       <button type='button' className='amount-btn' onClick={decrease}>
         <FaMinus />
       </button>
-      <h2>{amount}</h2>
+      <h3>{amount}</h3>
       <button type='button' className='amount-btn' onClick={increase}>
         <FaPlus />
       </button>
@@ -18,13 +19,27 @@ export default function ProductAmount({ increase, decrease, amount }) {
 
 const AmountContainer = styled.section`
   display: grid;
-  width: 125px;
+  width: 100px;
   justify-items: center;
+  align-items: center;
   grid-template-columns: repeat(3, 1fr);
   margin: 2rem 0;
-  button {
-    background: transparent;
+  .amount-btn {
+    background: var(--brand-color);
+    width: 1.75rem;
+    height: 1.75rem;
     border-color: transparent;
+    border-radius: 50%;
     cursor: pointer;
+    svg {
+      color: white;
+      font-size: 1rem;
+    }
+  }
+  .amount-btn:hover {
+    svg {
+      color: var(--heading-color);
+      transition: 0.5s;
+    }
   }
 `

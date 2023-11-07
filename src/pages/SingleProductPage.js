@@ -1,9 +1,15 @@
 import React, { useEffect } from 'react'
 import { useParams, useHistory, useNavigate } from 'react-router-dom'
-import { useProductsContext } from '../functionality/products-context'
+import { useProductsContext } from '../functionality/ProductsContext'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { Loading, Error, ProductInfo, ProductImages } from '../components'
+import {
+  Loading,
+  Error,
+  ProductInfo,
+  ProductImages,
+  AddToCart,
+} from '../components'
 
 export default function SingleProductPage() {
   const { id } = useParams()
@@ -13,6 +19,12 @@ export default function SingleProductPage() {
     s_product_error: error,
     products: products,
   } = useProductsContext()
+
+  // useEffect(() => {
+  //   fetchSingleProduct(`../nuvitta/products/${id}`)
+  // }, [id])
+
+  /* need to use useEffect for product stuff I think */
 
   useEffect(() => {
     if (error) {
@@ -34,12 +46,17 @@ export default function SingleProductPage() {
   return (
     <SingleProductContainer>
       <div className='page page-center'>
-        <Link to='../nuvitta/products' className='btn'>
-          back to products
-        </Link>
+        <div className='link-container'>
+          <Link to='../nuvitta/'>Home /</Link>
+          <Link to='../nuvitta/products'> Products / </Link>
+          {product.name}
+        </div>
         <div className='section-split'>
           <ProductImages {...product} />
-          <ProductInfo {...product} />
+          <div>
+            <ProductInfo {...product} />
+            <AddToCart product={product} />
+          </div>
         </div>
       </div>
     </SingleProductContainer>
@@ -47,15 +64,22 @@ export default function SingleProductPage() {
 }
 
 const SingleProductContainer = styled.section`
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   .section-split {
     display: grid;
-    gap: 2rem;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
   }
-  .btn {
-    padding: 0.5rem 1rem;
-    border-radius: 0.75rem;
+  .cart-section {
+    display: grid;
+    gap: 1rem;
+  }
+  .link-container {
+    font-weight: 300;
+    font-size: 1rem;
+    color: var(--brand-color);
+    a {
+      color: var(--heading-color);
+    }
   }
   @media (min-width: 1024px) {
     .section-split {

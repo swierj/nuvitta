@@ -20,8 +20,9 @@ const reducer = (state, action) => {
       return { ...state, isSidebarOpen: true }
     case ACTIONS.CLOSE:
       return { ...state, isSidebarOpen: false }
+    default:
+      return state
   }
-  return state
 }
 
 export const SidebarProvider = ({ children }) => {

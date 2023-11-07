@@ -3,9 +3,9 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { FaTimes } from 'react-icons/fa'
 import { links } from '../vars/links'
-import ShoppingCart from './ShoppingCart'
+import ShoppingCart from './CartIcon'
 import logo from '../assets/nuvitta-logo.png'
-import { useSidebarContext } from '../functionality/sidebar-context'
+import { useSidebarContext } from '../functionality/SidebarContext'
 
 export default function Sidebar() {
   const { isSidebarOpen, closeSidebar } = useSidebarContext()

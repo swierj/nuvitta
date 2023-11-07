@@ -19,7 +19,7 @@ export default function Banner() {
           since the 1500s.
         </p>
         <div className='btn-container'>
-          <Link to={links[2].url} className='btn'>
+          <Link to={links[1].url} className='btn'>
             shop products
           </Link>
         </div>

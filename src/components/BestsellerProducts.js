@@ -1,5 +1,5 @@
 import React from 'react'
-import { useProductsContext } from '../functionality/products-context'
+import { useProductsContext } from '../functionality/ProductsContext'
 import { Link } from 'react-router-dom'
 import { links } from '../vars/links'
 import Error from './Error'
@@ -23,7 +23,7 @@ export default function BestsellerProducts() {
     <BestSellerContainer className='page'>
       <div className='background-img page-center'></div>
       <div className='page-center title'>
-        <h1>Our Best Sellers</h1>
+        <h1>Our Bestsellers</h1>
       </div>
       <div className='page-center bestsell'>
         {bestsell.map((product) => {
@@ -31,7 +31,7 @@ export default function BestsellerProducts() {
         })}
       </div>
       <div className='btn-container'>
-        <Link to={links[2].url} className='btn'>
+        <Link to={links[1].url} className='btn'>
           all products
         </Link>
       </div>
@@ -42,24 +42,20 @@ export default function BestsellerProducts() {
 const BestSellerContainer = styled.section`
   background-color: var(--bundle-color);
   .bestsell {
-    justify-content: center;
-    align-items: center;
     margin: 4rem auto;
     display: grid;
-    img {
-      height: 250px;
-    }
+    gap: 2rem 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
   .btn {
     padding: 0.5rem 1rem;
-    border-radius: 0.75rem;
   }
   .btn-container {
     text-align: center;
   }
-  @media (min-width: 1024px) {
+  @media (min-width: 576px) {
     .bestsell {
-      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     }
     .title {
       text-align: left;

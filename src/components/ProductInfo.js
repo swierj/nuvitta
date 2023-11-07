@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import formatPrice from '../vars/helper'
+import { formatPrice } from '../vars/helper'
 import AddToCart from './AddToCart'
 
 export default function ProductInfo({
@@ -20,9 +20,6 @@ export default function ProductInfo({
         <p>{prodDirec}</p>
         <h3>ingredients</h3>
         <p>{prodIngr}</p>
-        <div className='cart-section'>
-          <AddToCart />
-        </div>
       </div>
     </ProductInfoContainer>
   )

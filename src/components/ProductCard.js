@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { FaSearch } from 'react-icons/fa'
-import formatPrice from '../vars/helper'
+import { formatPrice } from '../vars/helper'
 
 export default function ProductCard({ imgMain, name, price, id }) {
   return (
@@ -27,12 +27,13 @@ const ProductContainer = styled.article`
   .container {
     position: relative;
     max-width: fit-content;
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     background: var(--heading-color);
   }
   h3 {
     color: var(--product-info-color);
     font-weight: 600;
+    font-size: 1rem;
   }
   p {
     color: var(--product-info-color);
@@ -42,9 +43,10 @@ const ProductContainer = styled.article`
     width: 100%;
     display: block;
     object-fit: cover;
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     transition: 1s;
     margin-bottom: 0.5rem;
+    border-radius: 0.75rem;
   }
   .link {
     position: absolute;
