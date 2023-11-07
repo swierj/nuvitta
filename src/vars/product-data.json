@@ -1,0 +1,19 @@
+[
+  {
+    "id": "prod_OxiYUMGyc5VVy5",
+    "category": "product",
+    "bestseller": true,
+    "bundle": false,
+    "price": null,
+    "description": "Comfortable gray cotton t-shirt",
+    "size": null,
+    "images": [],
+    "metadata": {},
+    "name": "T-shirt",
+    "directions": null,
+    "ingredients": null,
+    "allergens": null,
+    "keyIngredients": null,
+    "unit_label": "oz"
+  }
+]

@@ -39,6 +39,7 @@ export default function BestsellerProducts() {
   )
 }
 
+/* change font size to be a bit bigger maybe? */
 const BestSellerContainer = styled.section`
   background-color: var(--bundle-color);
   .bestsell {
@@ -46,6 +47,9 @@ const BestSellerContainer = styled.section`
     display: grid;
     gap: 2rem 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    h3 {
+      font-size: 1rem;
+    }
   }
   .btn {
     padding: 0.5rem 1rem;

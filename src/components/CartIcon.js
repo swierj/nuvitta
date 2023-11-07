@@ -9,7 +9,7 @@ export default function CartIcon() {
   const { closeSidebar } = useSidebarContext()
   const { total_items } = useCartContext()
   return (
-    <CartIconContainer className='shopping-cart'>
+    <CartIconContainer className='shopping-cart hover-underline-animation'>
       <Link to='../nuvitta/cart' onClick={closeSidebar}>
         <div className='cart-icon'>
           <FaShoppingCart />
@@ -25,15 +25,12 @@ const CartIconContainer = styled.div`
     color: var(--heading-color);
     display: flex;
     align-items: center;
+    position: relative;
     svg {
       font-size: 2.5rem;
     }
   }
-  .cart-icon {
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
+
   .cart-amount {
     position: absolute;
     background: var(--brand-color);

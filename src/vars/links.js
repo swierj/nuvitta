@@ -5,19 +5,22 @@ export const links = [
   {
     id: 1,
     text: 'home',
-    url: '/nuvitta/',
+    url: '../nuvitta/',
   },
   {
     id: 2,
     text: 'products',
-    url: '/nuvitta/products',
+    url: '../nuvitta/products',
   },
   {
     id: 3,
     text: 'about us',
-    url: '/nuvitta/about',
+    url: '../nuvitta/about',
   },
 ]
 
 export const product_data =
   'https://swierj.github.io/nuvitta_api_test/product-data.json'
+
+export const s_product_data =
+  'https://swierj.github.io/nuvitta_api_test/images/'

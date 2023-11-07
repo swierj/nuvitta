@@ -35,10 +35,6 @@ const ProductInfoContainer = styled.section`
   .title {
     margin-bottom: 1rem;
   }
-  .cart-section {
-    display: grid;
-    gap: 1rem;
-  }
   .price {
     color: var(--brand-color);
     margin-bottom: 2rem;

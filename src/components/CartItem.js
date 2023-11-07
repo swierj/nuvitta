@@ -76,6 +76,9 @@ const CartItemContainer = styled.section`
     font-size: 1.25rem;
     margin-top: 2rem;
     margin-left: 3rem;
+    &:hover {
+      color: darkred;
+    }
   }
   .total-price {
     display: flex;

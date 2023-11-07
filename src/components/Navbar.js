@@ -24,7 +24,7 @@ export default function Nav() {
           {links.map((link) => {
             const { id, text, url } = link
             return (
-              <li key={id}>
+              <li className='hover-underline-animation' key={id}>
                 <NavLink end to={url}>
                   {text}
                 </NavLink>
@@ -100,6 +100,30 @@ const NavbarContainer = styled.nav`
       align-items: center;
     }
 
+    .hover-underline-animation {
+      display: flex;
+      position: relative;
+      color: var(--brand-color);
+    }
+
+    .hover-underline-animation::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 4px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--brand-color);
+      transform-origin: bottom left;
+      transition: transform 0.35s ease-out;
+    }
+
+    .hover-underline-animation:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
     ul {
       display: flex;
       justify-content: center;
@@ -115,10 +139,11 @@ const NavbarContainer = styled.nav`
         letter-spacing: 0.1rem;
         padding: 0.5rem;
         text-transform: capitalize;
-        &:hover {
-          border-bottom: 2px solid var(--brand-color);
-        }
       }
     }
   }
 `
+/* &:hover {
+          border-bottom: 2px solid var(--brand-color);
+          transition: 0.5s;
+        } */

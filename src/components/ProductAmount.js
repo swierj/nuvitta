@@ -38,8 +38,9 @@ const AmountContainer = styled.section`
   }
   .amount-btn:hover {
     svg {
-      color: var(--heading-color);
-      transition: 0.5s;
+      width: 1.4rem;
+      height: 1.4rem;
+      transition: 0.2s;
     }
   }
 `

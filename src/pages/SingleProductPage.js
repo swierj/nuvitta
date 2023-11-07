@@ -69,10 +69,6 @@ const SingleProductContainer = styled.section`
     display: grid;
     margin-top: 1.5rem;
   }
-  .cart-section {
-    display: grid;
-    gap: 1rem;
-  }
   .link-container {
     font-weight: 300;
     font-size: 1rem;
