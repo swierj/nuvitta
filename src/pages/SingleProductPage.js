@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useParams, useHistory, useNavigate } from 'react-router-dom'
 import { useProductsContext } from '../functionality/ProductsContext'
 import styled from 'styled-components'
@@ -9,6 +9,7 @@ import {
   ProductInfo,
   ProductImages,
   AddToCart,
+  ProductDetails,
 } from '../components'
 
 export default function SingleProductPage() {
@@ -58,6 +59,7 @@ export default function SingleProductPage() {
             <AddToCart product={product} />
           </div>
         </div>
+        <ProductDetails {...product} />
       </div>
     </SingleProductContainer>
   )
@@ -67,7 +69,8 @@ const SingleProductContainer = styled.section`
   margin-top: 1.5rem;
   .section-split {
     display: grid;
-    margin-top: 1.5rem;
+    margin: 1.5rem 0;
+    gap: 2rem;
   }
   .link-container {
     font-weight: 300;
@@ -79,7 +82,7 @@ const SingleProductContainer = styled.section`
   }
   @media (min-width: 1024px) {
     .section-split {
-      grid-template-columns: 1fr 1.5fr;
+      grid-template-columns: 1fr 1.6fr;
     }
   }
 `

@@ -7,7 +7,7 @@ export default function ProductImages({ imgMain, name, imgAlt1, imgAlt2 }) {
   return (
     <ImagesContainer>
       <img src={main} alt={name} className='mainImg' />
-      <div className='img-gallery'>
+      {/* <div className='img-gallery'>
         {images.map((image, index) => {
           return (
             <img
@@ -19,21 +19,21 @@ export default function ProductImages({ imgMain, name, imgAlt1, imgAlt2 }) {
             />
           )
         })}
-      </div>
+      </div> */}
     </ImagesContainer>
   )
 }
 
 const ImagesContainer = styled.section`
   img {
-    max-width: 26rem;
+    max-width: 30rem;
     display: block;
     border-radius: 0.75rem;
     object-fit: cover;
     align-items: center;
   }
   .img-gallery {
-    width: 26rem;
+    width: 30rem;
     margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

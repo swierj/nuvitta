@@ -14,6 +14,7 @@ import ProductInfo from './ProductInfo'
 import ProductImages from './ProductImages'
 import ProductList from './ProductList'
 import AddToCart from './AddToCart'
+import ProductDetails from './ProductDetails'
 import BackgroundImg from './BackgroundImg'
 import Filters from './Filters'
 import ViewFilter from './ViewFilter'
@@ -36,6 +37,7 @@ export {
   ProductInfo,
   ProductImages,
   AddToCart,
+  ProductDetails,
   BackgroundImg,
   ProductList,
   Filters,

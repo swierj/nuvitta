@@ -51,7 +51,7 @@ h1 {
 
 h2,
 h3 {
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.06rem;
 }
 
 h1,
@@ -109,6 +109,30 @@ p {
   margin: 0.25rem auto;
   height: 0.25rem;
   background: var(--brand-color);
+}
+
+.hover-underline-animation {
+  display: flex;
+  position: relative;
+  color: var(--brand-color);
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--brand-color);
+  transform-origin: bottom left;
+  transition: transform 0.35s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 @media (min-width: 1024px) {
   .page-content {

@@ -26,4 +26,11 @@ export default function CartPage() {
     </main>
   )
 }
-const CartPageContainer = styled.section``
+const CartPageContainer = styled.section`
+  h2 {
+    margin-bottom: 4rem;
+  }
+  .empty-cart {
+    text-align: center;
+  }
+`

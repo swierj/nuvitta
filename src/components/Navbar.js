@@ -62,7 +62,6 @@ const NavbarContainer = styled.nav`
       max-width: 10rem;
     }
   }
-
   /* hamburger button for mobile */
   .hamburger-btn {
     background: transparent;
@@ -98,30 +97,6 @@ const NavbarContainer = styled.nav`
       display: grid;
       grid-template-columns: auto 1fr auto;
       align-items: center;
-    }
-
-    .hover-underline-animation {
-      display: flex;
-      position: relative;
-      color: var(--brand-color);
-    }
-
-    .hover-underline-animation::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      transform: scaleX(0);
-      height: 4px;
-      bottom: 0;
-      left: 0;
-      background-color: var(--brand-color);
-      transform-origin: bottom left;
-      transition: transform 0.35s ease-out;
-    }
-
-    .hover-underline-animation:hover::after {
-      transform: scaleX(1);
-      transform-origin: bottom left;
     }
 
     ul {
