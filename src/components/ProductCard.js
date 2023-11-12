@@ -8,10 +8,10 @@ export default function ProductCard({ imgMain, name, price, id }) {
   return (
     <ProductContainer>
       <div className='container'>
-        <Link to={`../nuvitta/products/${id}`}>
+        <Link to={`/products/${id}`}>
           <img src={imgMain} alt={name} />
         </Link>
-        <Link to={`../nuvitta/products/${id}`} className='link'>
+        <Link to={`/products/${id}`} className='link'>
           <FaSearch />
         </Link>
       </div>

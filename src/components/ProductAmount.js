@@ -38,9 +38,9 @@ const AmountContainer = styled.section`
   }
   .amount-btn:hover {
     svg {
-      width: 1.4rem;
-      height: 1.4rem;
-      transition: 0.2s;
+      width: 1.3rem;
+      height: 1.3rem;
+      transition: 0.25s;
     }
   }
 `

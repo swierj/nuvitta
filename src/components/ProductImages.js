@@ -6,7 +6,9 @@ export default function ProductImages({ imgMain, name, imgAlt1, imgAlt2 }) {
   const [main, setMain] = useState(images[0])
   return (
     <ImagesContainer>
-      <img src={main} alt={name} className='mainImg' />
+      <div className='img-wrapper'>
+        <img src={main} alt={name} className='mainImg' />
+      </div>
       {/* <div className='img-gallery'>
         {images.map((image, index) => {
           return (
@@ -28,9 +30,15 @@ const ImagesContainer = styled.section`
   img {
     max-width: 30rem;
     display: block;
-    border-radius: 0.75rem;
     object-fit: cover;
     align-items: center;
+  }
+  img.mainImg:hover {
+    transform: scale(2);
+    transition: 0.25s;
+  }
+  .img-wrapper {
+    overflow: hidden;
   }
   .img-gallery {
     width: 30rem;

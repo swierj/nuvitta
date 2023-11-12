@@ -25,7 +25,7 @@ export default function CartContent() {
 
 const CartContainer = styled.section`
   display: grid;
-  grid-template-columns: 7fr 3fr;
+  grid-template-columns: 2fr 1fr;
   gap: 8rem;
   .title {
     font-size: 2rem;

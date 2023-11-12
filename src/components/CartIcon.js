@@ -10,7 +10,7 @@ export default function CartIcon() {
   const { total_items } = useCartContext()
   return (
     <CartIconContainer className='shopping-cart hover-underline-animation'>
-      <Link to='../nuvitta/cart' onClick={closeSidebar}>
+      <Link to='/cart' onClick={closeSidebar}>
         <div className='cart-icon'>
           <FaShoppingCart />
           <span className='cart-amount'>{total_items}</span>

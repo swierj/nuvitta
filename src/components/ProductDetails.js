@@ -30,7 +30,7 @@ export default function ProductDetails({
 
   return (
     <ProductDetailsContainer>
-      <Tabs defaultIndex={-1} onSelect={(index) => console.log(index)}>
+      <Tabs defaultIndex={0} onSelect={(index) => console.log(index)}>
         <TabList className={'tab-headers tabline'}>
           {categories.map((category, index) => {
             return (

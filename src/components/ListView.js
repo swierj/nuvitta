@@ -10,14 +10,14 @@ export default function ListView({ products }) {
         const { id, imgMain, name, price, prodDesc } = product
         return (
           <article key={id}>
-            <Link to={`../nuvitta/products/${id}`}>
+            <Link to={`/products/${id}`}>
               <img src={imgMain} alt={name} />
             </Link>
             <div>
               <h3>{name}</h3>
               <h5 className='price'>{formatPrice(price)}</h5>
               <p>{prodDesc.substring(0, 300)}...</p>
-              <Link to={`../nuvitta/products/${id}`} className='btn'>
+              <Link to={`/products/${id}`} className='btn'>
                 Details
               </Link>
             </div>

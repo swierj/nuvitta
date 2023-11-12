@@ -48,8 +48,8 @@ export default function SingleProductPage() {
     <SingleProductContainer>
       <div className='page page-center'>
         <div className='link-container'>
-          <Link to='../nuvitta/'>Home /</Link>
-          <Link to='../nuvitta/products'> Products / </Link>
+          <Link to='/'>Home /</Link>
+          <Link to='/products'> Products / </Link>
           {product.name}
         </div>
         <div className='section-split'>

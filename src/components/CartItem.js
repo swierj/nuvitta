@@ -22,10 +22,10 @@ export default function CartItem({ id, image, name, price, amount }) {
   return (
     <CartItemContainer>
       <div className='item page-center'>
-        <Link to={`../nuvitta/products/${id}`}>
+        <Link to={`/products/${id}`}>
           <img src={image} alt={name} />
         </Link>
-        <Link to={`../nuvitta/products/${id}`} className='product-name'>
+        <Link to={`/products/${id}`} className='product-name'>
           <h3 className='product-title'>{name}</h3>
           <h4>{formatPrice(price)}</h4>
         </Link>

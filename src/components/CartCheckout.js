@@ -29,7 +29,9 @@ export default function CartCheckout() {
           <p>{formatPrice(total_amount + shipping)}</p>
         </div>
       </article>
-      <Link className='btn black'>checkout</Link>
+      <Link to='/checkout' className='btn black'>
+        checkout
+      </Link>
       <Link to={links[1].url} className='btn'>
         continue shopping
       </Link>

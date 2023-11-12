@@ -9,16 +9,24 @@ export default function AddToCart({ product }) {
   const { id } = product
   const [amount, setAmount] = useState(1)
 
+  /* max 99 */
   const increase = () => {
     setAmount((oldAmount) => {
       let temp = oldAmount + 1
-      return temp
+      if (temp < 99) {
+        return temp
+      }
+      return 99
     })
   }
+  /* min 0 */
   const decrease = () => {
     setAmount((oldAmount) => {
       let temp = oldAmount - 1
-      return temp
+      if (temp > -1) {
+        return temp
+      }
+      return 0
     })
   }
   return (
@@ -30,7 +38,7 @@ export default function AddToCart({ product }) {
           amount={amount}
         />
         <Link
-          to='../nuvitta/cart'
+          to='/cart'
           className='btn'
           onClick={() => addToCart(id, amount, product)}
         >
