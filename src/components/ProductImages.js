@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 export default function ProductImages({ imgMain, name, imgAlt1, imgAlt2 }) {
   const images = [imgMain, imgAlt1, imgAlt2]
+  // eslint-disable-next-line
   const [main, setMain] = useState(images[0])
   return (
     <ImagesContainer>

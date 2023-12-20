@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { useParams, useHistory, useNavigate } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { useParams, useNavigate } from 'react-router-dom'
 import { useProductsContext } from '../functionality/ProductsContext'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
@@ -18,7 +18,7 @@ export default function SingleProductPage() {
   const {
     s_product_load: loading,
     s_product_error: error,
-    products: products,
+    products,
   } = useProductsContext()
 
   // useEffect(() => {

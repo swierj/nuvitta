@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import bannerImg from '../assets/skincare_products_pl.png'
 import { links } from '../vars/links'
-import test from '../assets/skincare-background.png'
 
 export default function Banner() {
   return (
@@ -24,7 +23,7 @@ export default function Banner() {
           </Link>
         </div>
       </article>
-      <img src={bannerImg} />
+      <img src={bannerImg} alt='banner' />
     </BannerContainer>
   )
 }

@@ -11,7 +11,6 @@ import {
   Cart,
   About,
   Products,
-  PrivateRoute,
   Error,
   Checkout,
 } from './pages'

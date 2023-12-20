@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
-import { useActionData } from 'react-router-dom'
 
 export default function ProductDetails({
   prodHighlight,
@@ -32,7 +31,7 @@ export default function ProductDetails({
     <ProductDetailsContainer>
       <Tabs defaultIndex={0} onSelect={(index) => console.log(index)}>
         <TabList className={'tab-headers tabline'}>
-          {categories.map((category, index) => {
+          {categories.map((category) => {
             return (
               <Tab key={category} className={'tab hover-underline-animation'}>
                 <h3>{category}</h3>
@@ -41,13 +40,14 @@ export default function ProductDetails({
           })}
         </TabList>
         {product.map((productInfo, index) => {
+          // mapping data based if it is in an array or not.
           if (Array.isArray(productInfo)) {
             return (
               <TabPanel key={index}>
                 {productInfo.map((s) => {
                   return (
                     <li key={s} className='list-items'>
-                      <p>{s}</p>
+                      {s}
                     </li>
                   )
                 })}
@@ -67,6 +67,10 @@ export default function ProductDetails({
 
 const ProductDetailsContainer = styled.section`
   margin-top: 2rem;
+  li {
+    font-weight: 300;
+    line-height: 1.75;
+  }
   .tab-headers {
     display: flex;
     gap: 4rem;

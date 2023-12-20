@@ -1,7 +1,5 @@
 import React from 'react'
 import { useProductsContext } from '../functionality/ProductsContext'
-import { Link } from 'react-router-dom'
-import { links } from '../vars/links'
 import Error from './Error'
 import Loading from './Loading'
 import styled from 'styled-components'

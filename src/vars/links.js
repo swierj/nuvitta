@@ -1,5 +1,3 @@
-import React from 'react'
-
 /* navbar/sidebar links to pages. change these back once i finish github deployment */
 export const links = [
   {

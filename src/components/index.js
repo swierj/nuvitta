@@ -20,7 +20,6 @@ import Filters from './Filters'
 import ViewFilter from './ViewFilter'
 import CartCheckout from './CartCheckout'
 import CartContent from './CartContent'
-import StripeCheckout from './StripeCheckout'
 
 export {
   Navbar,
@@ -45,5 +44,4 @@ export {
   ViewFilter,
   CartCheckout,
   CartContent,
-  StripeCheckout,
 }
