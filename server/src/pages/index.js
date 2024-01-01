@@ -6,6 +6,7 @@ import Error from './ErrorPage'
 import Products from './ProductsPage'
 import SingleProduct from './SingleProductPage'
 import PrivateRoute from './PrivateRoute'
+import Return from './ReturnPage'
 
 export {
   Home,
@@ -16,4 +17,5 @@ export {
   Products,
   SingleProduct,
   PrivateRoute,
+  Return,
 }

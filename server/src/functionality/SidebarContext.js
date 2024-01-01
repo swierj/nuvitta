@@ -1,5 +1,4 @@
-import axios from 'axios'
-import React, { useContext, useEffect, useReducer } from 'react'
+import React, { useContext, useReducer } from 'react'
 
 const initialState = {
   isSidebarOpen: false,

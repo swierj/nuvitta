@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { useCartContext } from '../functionality/CartContext'
 import CartItem from './CartItem'
 import CartCheckout from './CartCheckout'
+import { Link } from 'react-router-dom'
 
 const Message = ({ message }) => (
   <section>
@@ -41,11 +42,9 @@ export default function CartContent() {
       <section className='order-summary'>
         <h3 className='title'>Order Summary</h3>
         <CartCheckout />
-        <form action='/create-checkout-session' method='POST'>
-          <button type='submit' className='btn black'>
-            checkout
-          </button>
-        </form>
+        <Link to='/checkout' className='btn black'>
+          Checkout
+        </Link>
       </section>
     </CartContainer>
   )

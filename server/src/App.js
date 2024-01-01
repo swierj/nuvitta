@@ -13,6 +13,7 @@ import {
   Products,
   Error,
   Checkout,
+  Return,
 } from './pages'
 
 /* once i actually deploy the full site remember to change the homepage thing to actual domain */
@@ -29,6 +30,7 @@ export default function App() {
           <Route path='/products' element={<Products />} />
           <Route path='/products/:id' element={<SingleProduct />} />
           <Route path='/checkout' element={<Checkout />} />
+          <Route path='/return' element={<Return />} />
           <Route path='*' element={<Error />} />
         </Routes>
       </div>

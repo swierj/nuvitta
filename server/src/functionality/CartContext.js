@@ -26,7 +26,6 @@ const initialState = {
   total_amount: 0,
   shipping: 1000,
 }
-
 /* 
 do i need to use map and N runtime in add to cart and toggle item amount?
 maybe try finding a way to get the item by id in constant time and change its values?
@@ -49,6 +48,7 @@ const reducer = (state, action) => {
       }
       const newItem = {
         id: id,
+        price_id: product.price_id,
         name: product.name,
         amount,
         image: product.imgMain,
@@ -59,6 +59,7 @@ const reducer = (state, action) => {
       const cartRemove = state.cart.filter((item) => item.id !== action.payload)
       return { ...state, cart: cartRemove }
     case ACTIONS.TOGGLE_ITEM_AMOUNT:
+      // eslint-disable-next-line
       var { id, value } = action.payload
       const cartToggle = state.cart.map((item) => {
         if (item.id === id) {
@@ -85,8 +86,9 @@ const reducer = (state, action) => {
         { total_items: 0, total_amount: 0 }
       )
       return { ...state, total_items, total_amount }
+    default:
+      throw new Error(`No Matching "${action.type}" - action type`)
   }
-  throw new Error(`No Matching "${action.type}" - action type`)
 }
 
 const CartContext = React.createContext()

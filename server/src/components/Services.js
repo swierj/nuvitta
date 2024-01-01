@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FaLeaf, FaEye, FaGlobeAmericas } from 'react-icons/fa'
-import img1 from '../assets/water-lily.jpg' //delete this later when i decide what img to use
 import img2 from '../assets/grass-background.jpg'
 
 export default function Services() {
