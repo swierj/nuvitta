@@ -2,7 +2,7 @@
   "name": "server",
   "version": "1.0.0",
   "description": "nuvitta store server",
-  "homepage": "http://https://swierj.github.io/nuvitta/",
+  "homepage": "http://https://swierj.github.io/nuvitta/client/",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
