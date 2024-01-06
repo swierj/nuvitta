@@ -8,4 +8,4 @@ There's a problem with the homepage since github requires to set it to the repo 
 
 ### Example of working payment page in testing environment
 
-
+![alt text](https://github.com/swierj/nuvitta/blob/master/src/assets/nuvitta_payment_page.png)
