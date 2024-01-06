@@ -2,7 +2,7 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "homepage": "http://https://swierj.github.io/",
+  "homepage": "http://https://swierj.github.io/nuvitta/",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
