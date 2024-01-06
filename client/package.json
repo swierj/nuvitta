@@ -2,7 +2,7 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "homepage": "http://mynuvitta.com/",
+  "homepage": "http://https://swierj.github.io/nuvitta/client/",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
