@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "//swierj.github.io/nuvitta/client/static/css/main.f57b321f.css",
-    "main.js": "//swierj.github.io/nuvitta/client/static/js/main.5df5eca5.js",
-    "static/media/nuvitta_bundle_4.png": "//swierj.github.io/nuvitta/client/static/media/nuvitta_bundle_4.faf880cfe0a948472ce2.png",
-    "static/media/Woman-with-Leaf.png": "//swierj.github.io/nuvitta/client/static/media/Woman-with-Leaf.80e012be50c106cf4b6c.png",
-    "static/media/grass-background.jpg": "//swierj.github.io/nuvitta/client/static/media/grass-background.22a63ed940229c162695.jpg",
-    "static/media/nuvitta-logo.png": "//swierj.github.io/nuvitta/client/static/media/nuvitta-logo.882795d9217b3bc5ce2f.png",
-    "index.html": "//swierj.github.io/nuvitta/client/index.html",
-    "main.f57b321f.css.map": "//swierj.github.io/nuvitta/client/static/css/main.f57b321f.css.map",
-    "main.5df5eca5.js.map": "//swierj.github.io/nuvitta/client/static/js/main.5df5eca5.js.map"
+    "main.css": "//swierj.github.io/nuvitta/static/css/main.f57b321f.css",
+    "main.js": "//swierj.github.io/nuvitta/static/js/main.e6d0cfd6.js",
+    "static/media/nuvitta_bundle_4.png": "//swierj.github.io/nuvitta/static/media/nuvitta_bundle_4.faf880cfe0a948472ce2.png",
+    "static/media/Woman-with-Leaf.png": "//swierj.github.io/nuvitta/static/media/Woman-with-Leaf.80e012be50c106cf4b6c.png",
+    "static/media/grass-background.jpg": "//swierj.github.io/nuvitta/static/media/grass-background.22a63ed940229c162695.jpg",
+    "static/media/nuvitta-logo.png": "//swierj.github.io/nuvitta/static/media/nuvitta-logo.882795d9217b3bc5ce2f.png",
+    "index.html": "//swierj.github.io/nuvitta/index.html",
+    "main.f57b321f.css.map": "//swierj.github.io/nuvitta/static/css/main.f57b321f.css.map",
+    "main.e6d0cfd6.js.map": "//swierj.github.io/nuvitta/static/js/main.e6d0cfd6.js.map"
   },
   "entrypoints": [
     "static/css/main.f57b321f.css",
-    "static/js/main.5df5eca5.js"
+    "static/js/main.e6d0cfd6.js"
   ]
 }
