@@ -8,4 +8,6 @@ There's a problem with the homepage since github requires to set it to the repo 
 
 ### Example of working payment page in testing environment
 
+Site implements Stripe embedded checkout and backend calls to stripe for payment processing and UI elements.
+
 ![alt text](https://github.com/swierj/nuvitta/blob/master/src/assets/nuvitta_payment_page.png)
