@@ -1,11 +1,5 @@
 # Full stack e-commerce site for NuVitta cosmetics store
 
-### -> Currently working on finishing and implementing the back end, like stripe checkout and event webhooks.
+### About the Site
 
-*Note: this is mainly the front end portion without payment processing that I am allowed to host on github pages*
-
-You can view it here (*note: deployment might be outdated as I am working locally*): https://swierj.github.io/nuvitta/
-
--> The fully working site with customer payment processing capabilities will be hosted separetely here:
-  
-    -> You can find all of my code for the fully working site (with payment processing) in this repo:
+Note that the deployed site only has frontend functionality which means that contact form submission and payment processing will not work. Currently working on deploying a live version of the site using InMotion Hosting and cPanel. I fixed the directories to work with gh pages and also uploaded all my code, including the back end, located in the (server): https://swierj.github.io/nuvitta/server/ directory.
